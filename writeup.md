@@ -30,7 +30,7 @@ see line 1-32 of above section on file CarND-Advanced-Lane-Lines.ipynb
 see line 1-10 of above section on file CarND-Advanced-Lane-Lines.ipynb
 
 
-![png](output_3_1.png)
+![png](./output_images/output_3_1.png)
 
 
 ## 2.  Provide an example of a distortion-corrected image 
@@ -41,7 +41,7 @@ cv2.undistort function as bellow.
 see line 1-22 of above section on file CarND-Advanced-Lane-Lines.ipynb
 
 
-![png](output_5_1.png)
+![png](./output_images/output_5_1.png)
 
 
 ## 3. perspective transform with an example of a transformed image.
@@ -52,7 +52,7 @@ The code for my perspective transform includes a function called warper(), which
 
 see line 1-18 of above section on file CarND-Advanced-Lane-Lines.ipynb
 
-![png](output_9_1.png)
+![png](./output_images/output_9_1.png)
 
 
 I verified that my perspective transform was working as expected by drawing the src and dst points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image as above
@@ -65,7 +65,7 @@ sobel x gradient, S-color gradient, L-color gradient from HLS are usefull for th
 Here's an example of my output for this step. 
 
 
-![png](output_13_0.png)
+![png](./output_images/output_13_0.png)
 
 see line 1-96 of above section on file CarND-Advanced-Lane-Lines.ipynb
 
@@ -74,7 +74,7 @@ see line 1-96 of above section on file CarND-Advanced-Lane-Lines.ipynb
 Here I take the histogram of a binary warped image along the y-axis and take half of the histogram to detect left lane pixels and the remaining half to detect right lane pixels. Then use a sliding window to find the non-zero left and right indices of x and y of the detected lane pixels and from there fit the coordinates of x and y into a second order polynomial equation and return the left and right coefficients along with the detected non-zero indices.
 
 
-![png](output_16_0.png)
+![png](./output_images/output_16_0.png)
 
 see line 1-93 of above section on file CarND-Advanced-Lane-Lines.ipynb
 
@@ -83,7 +83,7 @@ right fit.
 see line 1-29 , function draw_lanes_and_lines,  on file CarND-Advanced-Lane-Lines.ipynb
 
 
-![png](output_19_0.png)
+![png](./output_images/output_19_0.png)
 
 
 # 6.  Calculated the radius of curvature of the lane and the position of the vehicle with respect to center. 
@@ -105,7 +105,7 @@ see line 1-93 of above section, function find_radius_of_curvature  on file CarND
 see line 1-32 of above section on file CarND-Advanced-Lane-Lines.ipynb
 
 
-![png](output_24_1.png)
+![png](./output_images/output_24_1.png)
 
 
 Draw some usefull information such as left and right lane curvature, space between lanes etc.
