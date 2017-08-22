@@ -42,6 +42,7 @@ see line 1-22 of above section on file CarND-Advanced-Lane-Lines.ipynb
 
 
 ![png](./output_images/output_5_1.png)
+![png](./output_images/output_5_2.png)
 
 
 ## 3. perspective transform with an example of a transformed image.
@@ -59,10 +60,11 @@ I verified that my perspective transform was working as expected by drawing the 
 
 ## 4. Color transforms, Gradients or other methods to create a thresholded binary image
 
-I used a combination of color and gradient thresholds to generate a binary image (bellow). Althouhg I tried with differen combination such as direction gradient, magnituted gradient, sobel x gradient, HLS color gradient I find 
-sobel x gradient, S-color gradient, L-color gradient from HLS are usefull for this exercise specially the L-color threshold was really usefull in detecting the shadow on the road (from flyover, lane crack repair etc.) and overcome them.
+I used a combination of color and gradient thresholds to generate a binary image (bellow). Althouhg I tried with differen combination such as direction gradient, magnituted gradient, sobel x gradient, HLS color gradient I find
+sobel x gradient, S-color gradient, L-color gradient from HLS are usefull for this exercise specially the L-color threshold was really usefull in detecting the shadow on the road (from flyover, lane crack repair etc.) and overcome them. I finally use      normalized L thresold from HLS color and normalized B thresold from LAB color to isolate White and Yellow Lanes. Color gradient
+seems more reliable  for dealing with shadows and variations in the road lighting than using gradients and edge 
 
-Here's an example of my output for this step. 
+Here's an example of my output for this step.
 
 
 ![png](./output_images/output_13_0.png)
